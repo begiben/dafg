@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Team DB - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-form">
+        <h2>Вход для администратора</h2>
+        <input type="text" id="login" placeholder="Логин">
+        <input type="password" id="password" placeholder="Пароль">
+        <button onclick="adminLogin()">Войти</button>
+    </div>
+    <div id="admin-panel" style="display: none;">
+        <h1>Sierra Team DB</h1>
+        <button onclick="logout()">Выйти</button>
+        <h2>Управление участниками</h2>
+        <input type="text" id="name" placeholder="Имя">
+        <input type="text" id="telegram" placeholder="Telegram">
+        <button onclick="addMember()">Добавить</button>
+        <ul id="members"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
